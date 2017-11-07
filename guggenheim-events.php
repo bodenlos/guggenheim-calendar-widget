@@ -164,7 +164,7 @@ class Guggenheim_Events extends WP_Widget {
 	/**
 	* Truncates a string according to specified word count.
 	*/
-    public function word_count($phrase, $max_words) {
+	public function word_count($phrase, $max_words) {
 		$phrase_array = explode(' ',$phrase);
 		if(count($phrase_array) > $max_words && $max_words > 0)
 		   $phrase = implode(' ',array_slice($phrase_array, 0, $max_words)).'&#8230;';

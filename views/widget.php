@@ -11,7 +11,7 @@
                 <span>' . $event_date . '</span>
                 <img src="' . $current_event->media[0]->assets->thumbnail->_links->_self->href . '">
                 <p>' . strip_tags( $this->word_count( 30, $current_event->descriptions->en ) ) . '&#8230; </p>
-                <a href="' . $current_event->_links->web->href . '">More Information ></a>
+                <a href="' . $current_event->_links->web->href . '">More Information</a> >
               </div>';
     }
     ?>

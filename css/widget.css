@@ -1,0 +1,27 @@
+/* Public-facing widget styles */
+
+.guggenheim-event-calendar{
+    display: inline-block;
+    max-width: 18rem;
+}
+
+.guggenheim-event-calendar h2{
+    font-size: 1em;
+}
+
+.guggenheim-event-calendar div{
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 2em 0 0 0;
+    padding: 0.5em 0 0 0;
+}
+
+.guggenheim-event-calendar h3{
+    font-size: 1.4em;
+    margin:0;
+    padding:0;
+}
+
+.guggenheim-event-calendar span{
+    font-size: .7em;
+    font-style: italic;
+}

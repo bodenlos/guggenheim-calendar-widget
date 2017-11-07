@@ -10,7 +10,6 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Guggenheim Event Calendar Demonstration
- * Plugin URI:        https://github.com/bodenlos
  * Description:       Guggenheim Event Calendar Demonstration displays upcoming events from the calendar at guggenheim.org.
  * Version:           1.0.0
  * Author:            Chris Bodenlos
@@ -19,7 +18,7 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /lang
- * GitHub Plugin URI: https://github.com/bodenlos
+ * GitHub Plugin URI: https://github.com/bodenlos/guggenheim-calendar-widget
  */
  
  // Prevent direct file access

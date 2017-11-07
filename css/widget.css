@@ -1,31 +1,28 @@
 /* Public-facing widget styles */
 
-.guggenheim-event-calendar{
-    display: inline-block;
-    max-width: 18rem;
-}
-
-.guggenheim-event-calendar h2{
+.guggenheim-events-class h2{
     font-size: 1em;
 }
 
-.guggenheim-event-calendar div{
+.guggenheim-events-class div{
+    display: inline-block;
     border-top: 1px solid rgb(0, 0, 0);
     margin: 2em 0 0 0;
     padding: 0.5em 0 0 0;
 }
 
-.guggenheim-event-calendar h3{
+.guggenheim-events-class h3{
     font-size: 1.4em;
     margin:0;
     padding:0;
 }
 
-.guggenheim-event-calendar span{
+.guggenheim-events-class span{
     font-size: .8em;
     font-style: italic;
 }
 
-.guggenheim-event-calendar img{
-    margin-top: 0.3em;
+.guggenheim-events-class img{
+    margin: 0.3em 0 0.7em 0;
+    width: 100%;
 }

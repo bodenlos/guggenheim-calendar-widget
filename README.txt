@@ -16,8 +16,8 @@ Guggenheim Event Calendar Demonstration Widget is a WordPress widget/plugin demo
 
 == Installation ==
 
-1. Upload the `/guggenheim-calendar-widget` path to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Uncompress and upload the `/guggenheim-calendar-widget/` directory to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in your WordPress admin. panel
 
 == Changelog ==
 

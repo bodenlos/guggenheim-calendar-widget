@@ -89,9 +89,6 @@ class Guggenheim_Events extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 
-		//debug
-		//wp_cache_delete( $this->get_widget_slug(), 'widget' );
-
 		// Check for cached output
 		$cache = wp_cache_get( $this->get_widget_slug(), 'widget' );
 
@@ -119,7 +116,6 @@ class Guggenheim_Events extends WP_Widget {
 		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
 		$widget_string .= ob_get_clean();
 		$widget_string .= $after_widget;
-
 
 		$cache[ $args['widget_id'] ] = $widget_string;
 
@@ -249,7 +245,6 @@ class Guggenheim_Events extends WP_Widget {
 
 } // end class
 
-//add_action( 'widgets_init', create_function( '', 'register_widget("Guggenheim_Events");' ) );
 function register_Guggenheim_Events() {
     register_widget("Guggenheim_Events");
 }

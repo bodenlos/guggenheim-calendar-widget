@@ -2,7 +2,7 @@
 
 Contributors: Chris Bodenlos
 Tags: widget, calendar
-Tested on WordPress: 4.8.3
+Tested on WordPress: 4.8.3, 4.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Guggenheim Event Calendar Demonstration Widget is a WordPress widget/plugin demo
 == Installation ==
 
 1. Upload the `/guggenheim-calendar-widget/` directory and contents to the `/wp-content/plugins/` WordPress plugins directory
-2. Activate the plugin through the 'Plugins' menu in your WordPress admin. panel
+2. Activate the plugin through the 'Plugins' menu in your WordPress administration panel
 
 == Changelog ==
 

@@ -109,10 +109,17 @@ class Guggenheim_Events extends WP_Widget {
 		$events = $this->get_remote_events();
 		
 		$widget_string = $before_widget;
-
+		
 		ob_start();
 		
-		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
+		$widget_string .= "<h2>Upcoming Events at the Guggenheim</h2>";
+
+		foreach ( $events->instances as $current_event ) {
+			$event_date = sanitize_text_field( $current_event->start_date ) . ' ' . sanitize_text_field($current_event->start_time );
+			$event_date = DateTime::createFromFormat( 'Y-m-d H:i:s', $event_date )->format('l F j, Y \a\t g:ia');
+			include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
+		}
+
 		$widget_string .= ob_get_clean();
 		$widget_string .= $after_widget;
 
@@ -182,7 +189,7 @@ class Guggenheim_Events extends WP_Widget {
             $response = wp_remote_get( 'https://www.guggenheim.org/wp-json/calendar/v1/events?start_date=' . $date . '&days=7' );
 
             if( is_wp_error( $response ) ) {
-                return array();
+				return array();
             }
     
             $events = json_decode( wp_remote_retrieve_body( $response ) );
